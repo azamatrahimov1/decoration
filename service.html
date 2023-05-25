@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="IMG/light-bulb.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">SHOP</a></li>
+                    <li><a href="">SERVICES</a></li>
+                </ul>
+            </nav>
+            <img src="IMG/CART1.png" width="30px" height="30px">
+            <img src="IMG/MENU3.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div> -->
+
+
+    <div class="small-container">
+
+        <div class="row row-2">
+            <h2>Decoration Services</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="IMG/Festival2.jpg">
+                <h4>Decoration of large festivals</h4>
+                <p>$5000</p>
+            </div>
+            <div class="col-4">
+                <img src="IMG/Holiday2.jpg">
+                <h4>Decoration of medium-sized holidays</h4>
+                <p>$1000</p>
+            </div>
+            <div class="col-4">
+                <img src="IMG/Holiday1.jpeg">
+                <h4>Decoration of small-sized parties</h4>
+                <p>$500</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+<!-----footer----->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="IMG/light-bulb.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Joy of Decorating the World</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow US</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagramm</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----JS for Menu---->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px")
+                {
+                    MenuItems.style.maxHeight="200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight="0px";
+                }    
+        }
+    </script>
+
+</body>
+</html>

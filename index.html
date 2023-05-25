@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univer web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="IMG/light-bulb.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="products.html">SHOP</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="IMG/CART1.png" width="30px" height="30px"></a>
+            <img src="IMG/MENU3.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>DECOR</h1>
+                <p>Decorations Make World More Beautiful</p>
+                <a href=""class="btn">Explore Now &#10132</a>
+            </div>
+            <div class="col-2">
+                <img src="IMG/FON3.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----featured categories----->
+
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="IMG/party.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="IMG/table.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="IMG/garland.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----featured products----->    
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="IMG/streamer.jpg">
+                <h4>Garlands</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$5</p>
+            </div>
+            <div class="col-4">
+                <img src="IMG/Shariki.jpg">
+                <h4>Balloons</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$2</p>
+            </div>
+            <div class="col-4">
+                <img src="IMG/Jack2.jpeg">
+                <h4>Jack's Lantern</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$10</p>
+            </div>
+            <div class="col-4">
+                <img src="IMG/Pasuda.jpg">
+                <h4>Tableware</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$15</p>
+            </div>
+        </div>
+    </div>
+
+<!-----offer----->
+
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="IMG/Fonar2.jpg" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on DECOR</p>
+                <h5>Decorative Lantern</h5>
+                <small>Buy two and get a third as a gift!</small>
+                <a href=""class="btn">Buy Now &#10132</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----footer----->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="IMG/light-bulb.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Joy of Decorating the World</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow US</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagramm</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----JS for Menu---->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px")
+                {
+                    MenuItems.style.maxHeight="200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight="0px";
+                }    
+        }
+    </script>
+
+</body>
+</html>
